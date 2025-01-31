@@ -1,0 +1,62 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0); /* Slight transparency to blend */
+    position: absolute; /* Make navbar float over the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 10; /* Ensures it's above the image */
+   
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-bar ul li {
+    padding: 1rem;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.nav-bar ul li a:hover {
+    color: #fdf58c;
+}
+
+.logo  {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 50%;
+}
+.menu {
+    display: flex; /* Ensures items are in a row */
+    align-items: center; /* Aligns everything properly */
+  }
+.menu a{
+    font-size: large;
+}
+
+.menu li:last-child a {
+    display: inline-block; /* Makes it behave like a button */
+    background-color: rgb(64, 64, 253); /* Change to your preferred color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding for a button feel */
+    border-radius: 5px; /* Rounded corners */
+    text-transform: uppercase; /* Keep consistency with other links */
+    font-weight: bold; /* Make it stand out */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  

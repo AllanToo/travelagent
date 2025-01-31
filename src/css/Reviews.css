@@ -1,0 +1,42 @@
+.testimonial {
+    display: inline-flex;
+    width: 35vh;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background: #fff;
+}
+
+.testimonial:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #4d58ee transparent;
+    display: block;
+    width: 0;
+}
+.testimonial:before {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: 20px;
+    border-width: 13px 13px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+.slick-prev, .slick-next {
+    z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+    display: none;
+}
