@@ -14,10 +14,13 @@ function Header() {
       
       
       <li>
-        <a href="#service">SERVICES</a>
+        <a href="#service">REVIEWS</a>
       </li>
       <li>
-        <a href="#hour">HOURS</a>
+        <a href="#hour">ABOUT US</a>
+      </li>
+      <li>
+        <a href="#hour">SERVICES</a>
       </li>
      
       <li>

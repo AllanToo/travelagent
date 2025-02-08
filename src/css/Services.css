@@ -1,0 +1,102 @@
+.services {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for each row */
+  gap: 20px; /* Reduced gap to bring services closer */
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+
+.service-item {
+  max-width: 220px; /* Smaller item size */
+  text-align: center;
+  padding: 10px;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px; /* Smaller icon */
+  border: 2px solid #4A90E2;
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px; /* Adjusted icon size */
+  color: #4A90E2;
+  margin: 0 auto 10px;
+}
+
+.service-item h3 {
+  font-size: 18px; /* Smaller heading */
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.service-item p {
+  font-size: 14px; /* Smaller description */
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Add vertical lines between the first 3 services */
+.service-list::before,
+.service-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #4A90E2; /* Vertical line color */
+}
+
+.service-list::before {
+  left: 33.33%; /* After the 1st service (first 3 items) */
+}
+
+.service-list::after {
+  left: 66.66%; /* After the 2nd service (first 3 items) */
+}
+
+/* Add additional lines for the second row */
+.service-list.second-row::before,
+.service-list.second-row::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #4A90E2; /* Vertical line color */
+}
+
+.service-list.second-row::before {
+  left: 33.33%; /* After the 4th service (second 3 items) */
+}
+
+.service-list.second-row::after {
+  left: 66.66%; /* After the 5th service (second 3 items) */
+}
+
+@media (max-width: 1024px) {
+  .service-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .service-list {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}

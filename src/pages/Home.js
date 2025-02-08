@@ -7,7 +7,7 @@ function Home() {
    
 
     <div className='popup-name'>
-     <h2>Welcome to VietTravel</h2>
+     <h2>Welcome to L and V Travel</h2>
         <h1>THE WORLD IS WAITING</h1>
         
     </div>
