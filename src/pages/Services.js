@@ -6,45 +6,45 @@ const servicesData = [
     {
       id: 1,
       icon: <FaPalette />, // Quality Design Icon
-      title: "Quality Design",
-      description: "Professional and modern designs tailored to your needs.",
+      title: "Book Air Tickets",
+      description: "International and Domestic Flights at the best price.",
     },
     {
       id: 2,
       icon: <FaTruck />, // Fast Delivery Icon
-      title: "Fast Delivery",
-      description: "Quick turnaround time without compromising on quality.",
+      title: "Package ",
+      description: "Mexico, Cuba, USA, Bahamas, Caribbean",
     },
     {
       id: 3,
       icon: <FaHeadset />, // 24/7 Support Icon
-      title: "24/7 Support",
-      description: "We are here to assist you anytime, anywhere.",
+      title: "Hotels & Cars",
+      description: "Best deals on hotels and car rentals.",
     },
     {
       id: 4,
       icon: <FaLaptop />, // Tech Expertise Icon
-      title: "Tech Expertise",
-      description: "Innovative solutions powered by cutting-edge technology.",
+      title: "Travel Insurance",
+      description: "Protect your trip with travel insurance.",
     },
     {
       id: 5,
       icon: <FaLightbulb />, // Creative Ideas Icon
-      title: "Creative Ideas",
-      description: "Unique and out-of-the-box solutions for your needs.",
+      title: "Renew Documents",
+      description: "PR Card & Apply for Canadian Citizenship & Apply USA Visa",
     },
     {
       id: 6,
       icon: <FaShieldAlt />, // Security Icon
-      title: "Security",
-      description: "Ensuring the safety and security of your information.",
+      title: "Legalization",
+      description: "Vietnamese Visa Application, Visa Exemption, Vietnamese Passport, Power of Atttorney",
     },
   ];
   
   const Services = () => {
     return (
       <section className="services">
-        <h2>Why Choose Us?</h2>
+        <h2>Services</h2>
         <div className="service-list">
           {servicesData.map((service) => (
             <div key={service.id} className="service-item">
