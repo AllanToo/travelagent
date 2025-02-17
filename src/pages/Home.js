@@ -1,14 +1,13 @@
 import React from 'react'
 import  "../css/Home.css"
-import HomeImage from "../images/home.jpg"
+import HomeImage from "../images/TravelAgency.jpg"
 function Home() {
   return (
     <div className='home'>
    
 
     <div className='popup-name'>
-     <h2>Welcome to L and V Travel</h2>
-        <h1>THE WORLD IS WAITING</h1>
+    
         
     </div>
 

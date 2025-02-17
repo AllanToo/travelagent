@@ -2,36 +2,24 @@
     position: relative; /* Allows navbar to overlay it */
     width: 100%;
     height: 80vh; /* Full screen */
-    background: url('../images/home.jpg') center/cover no-repeat;
+    background: url('../images/TravelAgency.jpg') center/contain no-repeat; /* Change cover to contain */
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden; /* Prevents cropping if the image is too large */
 }
 
-.home h1 {
-    color:black;
-    font-size: 39px;
-    font-weight:bolder
-}
-.home h2{
-    color:black;
-}
-
-.home p {
-    color: white;
-}
-
-.home img{
+.home img {
     width: 100%;
-    height: 80vh;
-    object-fit: cover;
+    height: auto; /* Adjust height automatically to keep the full image visible */
+    object-fit: contain; /* Ensures the entire image is shown */
     opacity: 98%;
+    max-height: 80vh; /* Prevents excessive stretching */
 }
-
 
 .popup-name {
     position: absolute;
-   top: 30%;
+    top: 30%;
     opacity: 70%;
     width: 40%;
     padding: 2rem;
@@ -39,15 +27,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+  
+    border-radius: 10px;
 }
 
-.popup-name h1,h2 {
-    
+.popup-name h1, h2 {
     letter-spacing: 5px;
+    text-align: center;
 }
 
 .popup-name p {
-    
     letter-spacing: 3px;
+    text-align: center;
 }
-

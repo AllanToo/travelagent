@@ -6,22 +6,58 @@ import "swiper/css";
 
 const reviews = [
   {
-    name: "Customer Name 1",
-    job: "Job title here",
-    text: "Booking our stay through this hotel website was a breeze! We found the perfect room at a great price, and the whole process was seamless. Our vacation was amazing, thanks to the fantastic accommodations we discovered here. We'll definitely be using this website for all our future travels!",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    name: "Sophia Carter",
+    job: "Registered Nurse",
+    text: "Personalized service that beats any online booking site—responsive, insightful, and truly cares about their clients.",
+    image: "https://randomuser.me/api/portraits/women/11.jpg",
   },
   {
-    name: "Customer Name 2",
-    job: "Job title here",
+    name: "Ian Simpson",
+    job: "Software Developer",
+    text: "Highly professional and detail-oriented—our itinerary was flawless, thanks to their deep knowledge and connections.",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
+  },
+  {
+    name: "Charlotte  Hamilton",
+    job: "Financial Analyst",
+    text: "A true travel expert! They handled everything from flights to accommodations, making our trip stress-free and enjoyable.",
+    image: "https://randomuser.me/api/portraits/women/17.jpg",
+  },
+  {
+    name: "Bruce Knight",
+    job: "Truck Driver",
+    text: " Every recommendation was spot-on, from hidden gems to luxury stays.",
+    image: "https://randomuser.me/api/portraits/men/9.jpg",
+  },
+  {
+    name: "Fernando Evans",
+    job: "Marketing Manager",
     text: "Great experience! The service was top-notch, and I highly recommend it to others.",
-    image: "https://randomuser.me/api/portraits/women/2.jpg",
+    image: "https://randomuser.me/api/portraits/men/13.jpg",
   },
   {
-    name: "Customer Name 3",
-    job: "Job title here",
+    name: "Olivia Anderson",
+    job: "Teacher",
     text: "A wonderful experience from start to finish. Highly professional and courteous!",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    image: "https://randomuser.me/api/portraits/women/19.jpg",
+  },
+  {
+    name: "Emma Thompson",
+    job: "Accountant",
+    text: "Trustworthy and knowledgeable—our best travel experiences have been with their expert planning.",
+    image: "https://randomuser.me/api/portraits/women/23.jpg",
+  },
+  {
+    name: "Chester Craig",
+    job: "Electriciane",
+    text: "Customer service is exceptional! Always available, quick to respond, and ensures every detail is perfect.",
+    image: "https://randomuser.me/api/portraits/men/17.jpg",
+  },
+  {
+    name: "Avery Mitchell",
+    job: "Real Estate Agent",
+    text: "An absolute pleasure to work with—whether it’s a family trip or a luxury getaway, they exceed expectations every time.",
+    image: "https://randomuser.me/api/portraits/women/28.jpg",
   }
 ];
 
