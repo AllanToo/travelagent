@@ -4,6 +4,7 @@ import Home from './Home'
 import Reviews from './Reviews'
 import Services from './Services'
 import Destinations from './Destinations'
+import Footer from './Footer'
 function Layout() {
   return (
     <div className='App'>
@@ -11,7 +12,8 @@ function Layout() {
       <Home/>
       <Destinations/>
       <Services/>
-      <Reviews/>
+    
+      <Footer/>
     </div>
   )
 }
