@@ -18,10 +18,10 @@ const destinations = [
 ];
 
 const travelDestinations = [
-  { name: "Munich", image: Images },
-  { name: "Around Munich", image: Korea },
-  { name: "Italy", image: VietNam2 },
-  { name: "Switzerland", image: AsiaTravel },
+  {  image: Images },
+  {  image: Korea },
+  { image: VietNam2 },
+  {  image: AsiaTravel },
 ];
 
 const Destinations = () => {

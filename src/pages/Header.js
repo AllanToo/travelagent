@@ -1,15 +1,16 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
+import Images from "../images/logoo.png";
 
 const Header = () => {
   return (
     <div className="flex items-center justify-between w-full px-10 py-6 border-b md:px-14">
-      {/* Left Side - Book Online */}
-      <a href="#" className="text-blue-600 font-bold text-3xl">
-        <span className="text-5xl">B</span>ook<span className="font-normal">online</span>
-      </a>
+      {/* Left Side - Enlarged Logo */}
+      <div className="flex items-center">
+        <img src={Images} alt="Logo" className="w-[300px] h-[300px] object-contain" />
+      </div>
 
-      {/* Middle - Social Media Icons */}
+      {/* Middle - Social Media Icons (Unchanged) */}
       <div className="flex items-center gap-8 text-blue-600 text-3xl md:gap-10">
         <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 transition duration-300">
           <FaFacebookF className="text-4xl" />
@@ -25,9 +26,9 @@ const Header = () => {
       {/* Divider */}
       <div className="h-8 w-[1px] bg-gray-300 hidden md:block"></div>
 
-      {/* Right Side - Phone Number */}
+      {/* Right Side - Phone Number (Unchanged) */}
       <a href="tel:8552295934" className="text-blue-800 font-bold text-3xl">
-        855-229-5934
+        403-604-9794
       </a>
     </div>
   );

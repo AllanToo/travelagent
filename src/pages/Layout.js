@@ -6,11 +6,14 @@ import Services from './Services'
 import Destinations from './Destinations'
 import Footer from './Footer'
 import Aboutus from './Aboutus'
+import Promotion from './Promotion'
 function Layout() {
   return (
     <div className='App'>
       <Header/>
+      <Promotion/>
       <Home/>
+      
       <Destinations/>
       <Services/>
       <Aboutus/>
