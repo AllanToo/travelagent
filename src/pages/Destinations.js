@@ -38,7 +38,7 @@ const Destinations = () => {
         {travelDestinations.map((destination, index) => (
           <div
             key={index}
-            className="relative w-64 h-80 rounded-lg overflow-hidden shadow-lg"
+            className="relative w-64 max-sm:w-[90%] lg:w-64 h-80 mx-auto rounded-lg overflow-hidden shadow-lg"
           >
             <img
               src={destination.image}
@@ -74,6 +74,4 @@ const Destinations = () => {
   );
 };
 
-  
-
-export default Destinations
+export default Destinations;

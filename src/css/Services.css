@@ -12,7 +12,7 @@
 
 .service-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns for each row */
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns for each row */
   gap: 20px; /* Reduced gap to bring services closer */
   justify-items: center;
   align-items: center;
@@ -20,9 +20,13 @@
 }
 
 .service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 220px; /* Smaller item size */
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 .service-icon {
@@ -36,7 +40,7 @@
   justify-content: center;
   font-size: 30px; /* Adjusted icon size */
   color: #4A90E2;
-  margin: 0 auto 10px;
+  margin-bottom: 10px; /* Ensure space between icon and text */
 }
 
 .service-item h3 {
@@ -49,9 +53,43 @@
   font-size: 14px; /* Smaller description */
   color: #666;
   line-height: 1.5;
+  margin-top: 0; /* Remove any top margin */
 }
 
-/* Add vertical lines between the first 3 services */
+/* Responsive design for smaller screens */
+@media screen and (max-width: 640px) {
+  .service-list {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 10px; /* Smaller gap */
+  }
+
+  .service-item {
+    max-width: 100%; /* Make the items fill the width */
+    padding: 15px; /* Adjust padding for better spacing */
+  }
+
+  .service-icon {
+    width: 50px;
+    height: 50px; /* Slightly smaller icon */
+    font-size: 25px; /* Adjust icon size */
+  }
+
+  .service-item h3 {
+    font-size: 16px; /* Slightly smaller heading */
+  }
+
+  .service-item p {
+    font-size: 12px; /* Smaller description */
+  }
+
+  /* Remove vertical lines on small screens */
+  .service-list::before,
+  .service-list::after {
+    display: none; /* Hide the vertical lines */
+  }
+}
+
+/* Add vertical lines between the first 3 services (for larger screens) */
 .service-list::before,
 .service-list::after {
   content: "";
@@ -70,7 +108,7 @@
   left: 66.66%; /* After the 2nd service (first 3 items) */
 }
 
-/* Add additional lines for the second row */
+/* Add additional lines for the second row (for larger screens) */
 .service-list.second-row::before,
 .service-list.second-row::after {
   content: "";
@@ -87,16 +125,4 @@
 
 .service-list.second-row::after {
   left: 66.66%; /* After the 5th service (second 3 items) */
-}
-
-@media (max-width: 1024px) {
-  .service-list {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .service-list {
-    grid-template-columns: 1fr; /* 1 column on small screens */
-  }
 }
