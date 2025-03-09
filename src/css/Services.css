@@ -12,84 +12,85 @@
 
 .service-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns for each row */
-  gap: 20px; /* Reduced gap to bring services closer */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 20px; /* Evenly spaced */
   justify-items: center;
-  align-items: center;
+  align-items: start; /* Align all items to the top */
   position: relative;
 }
 
 .service-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Align content properly */
   align-items: center;
-  max-width: 220px; /* Smaller item size */
+  max-width: 220px;
   text-align: center;
   padding: 20px;
 }
 
 .service-icon {
   width: 60px;
-  height: 60px; /* Smaller icon */
+  height: 60px;
   border: 2px solid #4A90E2;
   border-radius: 12px;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px; /* Adjusted icon size */
+  font-size: 30px;
   color: #4A90E2;
-  margin-bottom: 10px; /* Ensure space between icon and text */
+  margin-bottom: 8px; /* Adjusted for better spacing */
 }
 
 .service-item h3 {
-  font-size: 18px; /* Smaller heading */
+  font-size: 18px;
   color: #222;
-  margin-bottom: 8px;
+  margin-bottom: 4px; /* Reduced gap */
 }
 
 .service-item p {
-  font-size: 14px; /* Smaller description */
+  font-size: 14px;
   color: #666;
-  line-height: 1.5;
-  margin-top: 0; /* Remove any top margin */
+  line-height: 1.4;
+  margin-top: 0;
+  min-height: 40px; /* Keeps all descriptions aligned */
 }
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 640px) {
   .service-list {
-    grid-template-columns: 1fr; /* Single column on small screens */
-    gap: 10px; /* Smaller gap */
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px;
   }
 
   .service-item {
-    max-width: 100%; /* Make the items fill the width */
-    padding: 15px; /* Adjust padding for better spacing */
+    max-width: 100%;
+    padding: 15px;
   }
 
   .service-icon {
     width: 50px;
-    height: 50px; /* Slightly smaller icon */
-    font-size: 25px; /* Adjust icon size */
+    height: 50px;
+    font-size: 25px;
   }
 
   .service-item h3 {
-    font-size: 16px; /* Slightly smaller heading */
+    font-size: 16px;
   }
 
   .service-item p {
-    font-size: 12px; /* Smaller description */
+    font-size: 12px;
   }
 
   /* Remove vertical lines on small screens */
   .service-list::before,
   .service-list::after {
-    display: none; /* Hide the vertical lines */
+    display: none;
   }
 }
 
-/* Add vertical lines between the first 3 services (for larger screens) */
+/* Add vertical lines for larger screens */
 .service-list::before,
 .service-list::after {
   content: "";
@@ -97,32 +98,13 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background-color: #4A90E2; /* Vertical line color */
+  background-color: #4A90E2;
 }
 
 .service-list::before {
-  left: 33.33%; /* After the 1st service (first 3 items) */
+  left: 33.33%; /* First vertical line */
 }
 
 .service-list::after {
-  left: 66.66%; /* After the 2nd service (first 3 items) */
-}
-
-/* Add additional lines for the second row (for larger screens) */
-.service-list.second-row::before,
-.service-list.second-row::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: #4A90E2; /* Vertical line color */
-}
-
-.service-list.second-row::before {
-  left: 33.33%; /* After the 4th service (second 3 items) */
-}
-
-.service-list.second-row::after {
-  left: 66.66%; /* After the 5th service (second 3 items) */
+  left: 66.66%; /* Second vertical line */
 }
