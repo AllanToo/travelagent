@@ -3,7 +3,7 @@ import { FaMapMarkedAlt, FaUsers, FaStar, FaGlobe } from "react-icons/fa";
 
 const Aboutus = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const phoneNumber = "403-604-9794"; // Your contact number
+  const phoneNumber = "825-431-4412"; // Your contact number
 
   return (
     <div className="bg-gray-100">
