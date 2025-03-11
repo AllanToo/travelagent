@@ -61,7 +61,7 @@ const Aboutus = () => {
         <h2 className="text-4xl font-bold">Ready to Start Your Next Adventure?</h2>
         <p className="mt-4 text-lg">Let us plan your dream vacation today.</p>
         <button className="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition">
-          Book Now
+        Contact us at 403-604-9794
         </button>
       </div>
     </div>

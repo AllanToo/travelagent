@@ -5,6 +5,8 @@ import { FaPalette, FaTruck, FaHeadset, FaLaptop, FaLightbulb, FaShieldAlt } fro
 import { MdFlightTakeoff } from "react-icons/md";
 import { IoCarSportSharp, IoDocumentsSharp } from "react-icons/io5";
 import { FaPassport } from "react-icons/fa";
+import { MdOutlineTravelExplore } from "react-icons/md";
+
 const servicesData = [
     {
       id: 1,
@@ -14,7 +16,7 @@ const servicesData = [
     },
     {
       id: 2,
-      icon: <IoCarSportSharp />, // Fast Delivery Icon
+      icon: <MdOutlineTravelExplore/>, // Fast Delivery Icon
       title: "Package ",
       description: "Mexico, Cuba, USA, Bahamas, Caribbean",
     },

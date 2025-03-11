@@ -20,25 +20,12 @@ const Home = () => {
         </p>
 
         {/* New Section - CTA Buttons & User Stats */}
-        <div className="mt-6 flex flex-col sm:flex-row items-center gap-6">
-          {/* Left - Call To Action */}
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-blue-700 transition">
-            Start Now
-          </button>
-
-          {/* Middle - Watch Video Button */}
-        
-        </div>
+      
 
         {/* Bottom - User Reviews Section */}
         <div className="mt-8 flex items-center gap-4">
           {/* Profile Avatars */}
-          <div className="flex -space-x-3">
-            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="User 1" className="w-12 h-12 border-2 border-white rounded-full shadow-lg" />
-            <img src="https://randomuser.me/api/portraits/men/17.jpg" alt="User 2" className="w-12 h-12 border-2 border-white rounded-full shadow-lg" />
-            <img src="https://randomuser.me/api/portraits/women/23.jpg" alt="User 3" className="w-12 h-12 border-2 border-white rounded-full shadow-lg" />
-            <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="User 4" className="w-12 h-12 border-2 border-white rounded-full shadow-lg" />
-          </div>
+       
 
           {/* Text */}
           <div>
