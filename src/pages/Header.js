@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
 import Images from "../images/Logo.jpg";
+import { SiFacebook } from "react-icons/si";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
       {/* Social Icons */}
       <div className="flex gap-x-6 md:gap-x-10 text-blue-600 text-2xl md:text-3xl">
         <a href="https://www.facebook.com/lynn.le.359" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 transition duration-300">
-          <FaFacebookF />
+          <SiFacebook />
         </a>
         
       </div>
