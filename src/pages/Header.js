@@ -11,7 +11,7 @@ const Header = () => {
 
       {/* Social Icons */}
       <div className="flex gap-x-6 md:gap-x-10 text-blue-600 text-2xl md:text-3xl">
-        <a href="https://www.facebook.com/lynn.le.359" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 transition duration-300">
+        <a href="https://www.facebook.com/profile.php?id=61572706170214" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 transition duration-300">
           <SiFacebook />
         </a>
         
