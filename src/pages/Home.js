@@ -38,27 +38,28 @@ const Home = () => {
       
 
       {/* Right Image Collage - Adjusted for Closer & Bigger Layout */}
-      <div className="relative grid grid-cols-3 grid-rows-3 gap-1 mt-10 lg:mt-0 lg:ml-8 w-[550px] h-[500px]">
-        {/* Large Top Left Image */}
-        <div className="col-span-2 row-span-2 rounded-tl-[50px] overflow-hidden shadow-lg">
-          <img src={Image} alt="Destination 1" className="w-full h-full object-cover" />
-        </div>
+      <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-fr gap-1 mt-10 lg:mt-0 lg:ml-8 w-full max-w-[550px] h-auto">
+  {/* Large Top Left Image */}
+  <div className="md:col-span-2 md:row-span-2 rounded-tl-[50px] overflow-hidden shadow-lg">
+    <img src={Image} alt="Destination 1" className="w-full h-full object-cover" />
+  </div>
 
-        {/* Top Right Image */}
-        <div className="rounded-tr-[50px] overflow-hidden shadow-lg">
-          <img src={VietNam2} alt="Destination 2" className="w-full h-full object-cover" />
-        </div>
+  {/* Top Right Image */}
+  <div className="rounded-tr-[50px] overflow-hidden shadow-lg">
+    <img src={VietNam2} alt="Destination 2" className="w-full h-full object-cover" />
+  </div>
 
-        {/* Middle Left Image */}
-        <div className="rounded-bl-[50px] overflow-hidden shadow-lg">
-          <img src={VietNam} alt="Destination 3" className="w-full h-full object-cover" />
-        </div>
+  {/* Middle Left Image */}
+  <div className="rounded-bl-[50px] overflow-hidden shadow-lg">
+    <img src={VietNam} alt="Destination 3" className="w-full h-full object-cover" />
+  </div>
 
-        {/* Large Middle Right Image */}
-        <div className="col-span-2 rounded-br-[50px] overflow-hidden shadow-lg">
-          <img src={Korea} alt="Destination 4" className="w-full h-full object-cover" />
-        </div>
-      </div>
+  {/* Large Middle Right Image */}
+  <div className="md:col-span-2 rounded-br-[50px] overflow-hidden shadow-lg">
+    <img src={Korea} alt="Destination 4" className="w-full h-full object-cover" />
+  </div>
+</div>
+
     </div>
   );
 };
