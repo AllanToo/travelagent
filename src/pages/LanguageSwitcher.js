@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const [activeTab, setActiveTab] = useState(i18n.language || 'en');
+
+  // Ensure the default language is set to English when the app loads
+  useEffect(() => {
+    if (!i18n.language) {
+      i18n.changeLanguage('en');
+      setActiveTab('en');
+    }
+  }, [i18n]);
 
   const switchLang = (lang) => {
     i18n.changeLanguage(lang);
