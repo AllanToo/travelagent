@@ -1,3 +1,4 @@
+import i18n from './pages/i18n';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
